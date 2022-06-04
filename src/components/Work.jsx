@@ -3,6 +3,7 @@ import WorkImg from "../assets/workImg.jpeg";
 import Calculator from "../assets/calculator.png";
 import Map from "../assets/map.png";
 import Robots from "../assets/robots.jpg";
+import Weather from "../assets/weatherApp.png";
 
 // import realState from "../assets/realstate.jpg";
 
@@ -80,6 +81,29 @@ const Work = () => {
                   </button>
                 </a>
                 <a href="https://github.com/jorgegso/robotFr">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{ backgroundImage: `url(${Weather})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            {/* Hover effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className=" font-bold text-white tracking-wider">
+                Weather app
+              </span>
+              <div className="pt-8 text-center">
+                <a href="https://jorgegso.github.io/wetherappReact/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://github.com/jorgegso/wetherappReact">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
