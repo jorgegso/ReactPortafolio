@@ -4,7 +4,7 @@ import Calculator from "../assets/calculator.png";
 import Map from "../assets/map.png";
 import Robots from "../assets/robots.jpg";
 import Weather from "../assets/weatherApp.png";
-
+import Face from "../assets/Face.png";
 // import realState from "../assets/realstate.jpg";
 
 const Work = () => {
@@ -67,6 +67,29 @@ const Work = () => {
           
           {/* 3 work */}
           <div
+            style={{ backgroundImage: `url(${Face})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            {/* Hover effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className=" font-bold text-white tracking-wider">
+                Robots searcher
+              </span>
+              <div className="pt-8 text-center">
+                <a href="https://ssmart-brainn.herokuapp.com/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://github.com/jorgegso/faceRecognitionApp">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* 4 work */}
+          <div
             style={{ backgroundImage: `url(${Robots})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
             {/* Hover effects */}
@@ -118,3 +141,5 @@ const Work = () => {
 };
 
 export default Work;
+
+
