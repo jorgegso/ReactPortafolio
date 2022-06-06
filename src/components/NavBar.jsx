@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   // FaFacebook,
 } from "react-icons/fa";
+
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
@@ -104,7 +105,7 @@ const NavBar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-111px] hover:ml-[-10px] duration-300">
             <a
               className="flex justify-between items-center text-gray-300"
-              href="/"> <div className="mr-2"> Resume</div> <BsFillPersonLinesFill size={30} />
+              href="/resume"> <div className="mr-2"> Resume</div> <BsFillPersonLinesFill size={30} />
             </a>
           </li>
         </ul>

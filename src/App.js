@@ -1,22 +1,19 @@
 import "./App.css";
-import Home from "./components/Home";
-import NavBar from "./components/NavBar";
-import About from "./components/About";
-import Skill from "./components/Skill";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Homepage from "./pages/Homepage";
+import Resume from "./pages/Resume";
+import Notfound from "./pages/Notfound";
+import {BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
-      <Skill />
-      <Work />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />}/>
+        <Route path="/resume" element={<Resume />}/>
+        <Route path='*' element={<Notfound />} />
+      </Routes>
+    
+    </BrowserRouter>
+    
   );
 }
 

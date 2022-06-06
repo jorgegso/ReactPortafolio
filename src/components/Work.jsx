@@ -1,5 +1,4 @@
 import React from "react";
-import WorkImg from "../assets/workImg.jpeg";
 import Calculator from "../assets/calculator.png";
 import Map from "../assets/map.png";
 import Robots from "../assets/robots.jpg";
