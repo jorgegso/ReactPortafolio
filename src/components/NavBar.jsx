@@ -16,7 +16,7 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-r from-pink-500">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-l from-pink-700">
       <div>
         <img src={Logo} alt="logo imagen" style={{ width: "72px" }} />
       </div>
