@@ -14,11 +14,6 @@ or
 3. Run a localhost or go with Live Server from vscode.
 4. that's it.
 
-##missing things
-
-- 🐅 Form for contact me.
-- 🐉 Page animations.
-- 🦝 Go to home button.
 
 ## What the web looks like
 
