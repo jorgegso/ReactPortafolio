@@ -11,7 +11,7 @@ or
 
 1. Download  fron github.
 2. git clone URL.
-3. Run a localhost or go with Live Server from vscode.
+3. Run with npm or yarn.
 4. that's it.
 
 
