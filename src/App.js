@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/reactPortafolio" element={<Homepage />}/>
-        <Route path="/reactPortafolio/resume" element={<Resume />}/>
+        <Route path="/reactPortafolio/cv" element={<Resume />}/>
         <Route path='*' element={<Notfound />} />
       </Routes>
     
