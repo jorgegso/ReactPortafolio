@@ -71,7 +71,7 @@ const Work = () => {
             {/* Hover effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className=" font-bold text-white tracking-wider">
-                Robots searcher
+                Face ID 
               </span>
               <div className="pt-8 text-center">
                 <a href="https://ssmart-brainn.herokuapp.com/">
