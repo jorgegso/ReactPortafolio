@@ -1,14 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion"
 
 const About = () => {
   return (
-    <motion.div
-  initial={{ x: "100%" }}
-  animate={{ x: "0vw" }}>
     <div name="about" className="w-full h-screen bg-[#0E1117] text-gray-300 ">
-      
-      
       <div className=" flex flex-col justify-center items-center w-full h-full ">
         <div className="w-full max-w-[1000px] grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -16,12 +10,9 @@ const About = () => {
           </div>  
           <div></div> 
         </div>
-
         <div className="w-full max-w-[1000px]  grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold">
-          
             <p>hi nice to meet you. Please take a look around.</p>
-        
           </div>
           <div>
             <p>
@@ -34,7 +25,6 @@ const About = () => {
         </div>
       </div>
     </div>
-    </motion.div>
   );
 };
 
