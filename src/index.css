@@ -13,7 +13,11 @@
     @apply cursor-pointer;
   }
 }
-
+.container {
+  display:flex;
+  justify-content: center;
+  
+}
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
