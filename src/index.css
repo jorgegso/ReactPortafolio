@@ -16,7 +16,6 @@
 .container {
   display:flex;
   justify-content: center;
-  
 }
 .content-div {
   background-repeat: no-repeat;
