@@ -45,7 +45,7 @@ const Home = () => {
           </p>
         </motion.div>
 
-        <div>
+        <div className="z-40">
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
               View work
