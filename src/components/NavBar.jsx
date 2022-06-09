@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IconContext } from "react-icons";
 import {
   FaBars,
   FaTimes,
@@ -16,7 +17,7 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-l from-pink-700">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-l from-[#d7d7d71a] z-40">
       <div>
         <img src={Logo} alt="logo imagen" style={{ width: "72px" }} />
       </div>
@@ -50,14 +51,22 @@ const NavBar = () => {
       </ul>
       {/* Hamburguer */}
       <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!nav ? (
+          <IconContext.Provider value={{ color: "#a6a6a6", size: "35px" }}>
+            <FaBars />
+          </IconContext.Provider>
+        ) : (
+          <IconContext.Provider value={{ color: "#a6a6a6", size: "35px" }}>
+          <FaTimes />
+          </IconContext.Provider>
+        )}
       </div>
       {/* movil menu */}
       <ul
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#4c4a66] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#4c4a66] text-[#d1d5db] flex flex-col justify-center items-center"
         }>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
