@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 // import "./App.css";
 import Home from "../components/Home";
 import NavBar from "../components/NavBar";
@@ -19,11 +19,7 @@ const Homepage = () => {
       <Contact />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
-
-
-
-
+export default Homepage;

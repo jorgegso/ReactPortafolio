@@ -9,6 +9,7 @@ import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
 import GitHub from "../assets/github.png";
+import { motion } from "framer-motion";
 const Skill = () => {
   return (
     <div name="skill" className="w-full h-screen bg-[#01010D] text-gray-300">
@@ -16,10 +17,19 @@ const Skill = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         {/* col 1 */}
         <div>
+        <motion.div
+              className="actions"
+              initial={{ x: -200 }}
+              animate={{x: 1 }}
+              transition={{ repeat: Infinity ,repeatType: "reverse",
+              duration: 4 }}>
           <p className="text-4xl font-bold inline border-b-4  border-pink-600 py-1 ">
             Experience
           </p>
-          <p className="py-4 mt-3">These are the technologies i've worked with</p>
+          </motion.div>
+          <p className="py-4 mt-3">
+            These are the technologies i've worked with
+          </p>
         </div>
         {/* col 2 */}
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
@@ -32,7 +42,11 @@ const Skill = () => {
             <p className="my-4">CSS</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:bg-gray-800 duration-500">
-            <img className="w-20 mx-auto my-4" src={JavaScript} alt="HTML icon" />
+            <img
+              className="w-20 mx-auto my-4"
+              src={JavaScript}
+              alt="HTML icon"
+            />
             <p className="my-4">JavaScript</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:bg-gray-800 duration-500">

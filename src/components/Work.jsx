@@ -4,6 +4,8 @@ import Map from "../assets/map.png";
 import Robots from "../assets/robots.jpg";
 import Weather from "../assets/weatherApp.png";
 import Face from "../assets/Face.png";
+import { motion } from "framer-motion";
+
 // import realState from "../assets/realstate.jpg";
 
 const Work = () => {
@@ -11,15 +13,28 @@ const Work = () => {
     <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0E1117]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
-            Work
-          </p>
+          <motion.div
+            className="actions"
+            initial={{ x: -200 }}
+            animate={{ x: 1 }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "reverse",
+              duration: 4,
+            }}>
+            <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
+              Work
+            </p>
+          </motion.div>
+
           <p className="py-6">Check out some of my recent work</p>
         </div>
-        
+
         {/* Project 1 */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div style={{ backgroundImage: `url(${Calculator})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+          <div
+            style={{ backgroundImage: `url(${Calculator})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
             {/* Hover effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className=" font-bold text-white tracking-wider">
@@ -39,8 +54,8 @@ const Work = () => {
               </div>
             </div>
           </div>
-        {/* project 2  */}
-        <div
+          {/* project 2  */}
+          <div
             style={{ backgroundImage: `url(${Map})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
             {/* Hover effects */}
@@ -62,8 +77,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          
-          
+
           {/* 3 work */}
           <div
             style={{ backgroundImage: `url(${Face})` }}
@@ -71,7 +85,7 @@ const Work = () => {
             {/* Hover effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className=" font-bold text-white tracking-wider">
-                Face ID 
+                Face ID
               </span>
               <div className="pt-8 text-center">
                 <a href="https://ssmart-brainn.herokuapp.com/">
@@ -140,5 +154,3 @@ const Work = () => {
 };
 
 export default Work;
-
-

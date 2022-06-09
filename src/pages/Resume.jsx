@@ -1,14 +1,11 @@
-import React from 'react'
-import ResumenPdf from '../assets/jorgeSosaResume.pdf'
+import React from "react";
+import ResumenPdf from "../assets/jorgeSosaResume.pdf";
 const Resume = () => {
   return (
     <div>
-      <iframe
-        title='Resume' 
-        src={ResumenPdf}>
-      </iframe>  
+      <iframe title="Resume" src={ResumenPdf}></iframe>
     </div>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
