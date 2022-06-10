@@ -17,5 +17,7 @@ or
 
 ## What the web looks like
 
-![image](https://user-images.githubusercontent.com/63064991/172086758-3f7b39de-1b85-4ea3-942b-8426c8b4ed39.png)
+
+![image](https://user-images.githubusercontent.com/63064991/172964256-3d31effd-e5a8-499c-8c13-5452e2b17e91.png)
+
 
