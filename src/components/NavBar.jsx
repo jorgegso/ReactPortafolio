@@ -4,7 +4,6 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
@@ -14,7 +13,6 @@ const NavBar = () => {
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-l from-[#d7d7d71a] z-40">
       <div>
         <h1 className="text-4xl text-stone-200">JS</h1>
-        {/* <img src={Logo} alt="logo imagen" style={{ width: "72px" }} /> */}
       </div>
       {/* Full Menu */}
       <ul className="hidden md:flex text-[#8892b0]">
