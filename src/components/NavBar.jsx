@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import { IconContext } from "react-icons";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  // FaFacebook,
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -19,7 +13,8 @@ const NavBar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-l from-[#d7d7d71a] z-40">
       <div>
-        <img src={Logo} alt="logo imagen" style={{ width: "72px" }} />
+        <h1 className="text-4xl text-stone-200">JS</h1>
+        {/* <img src={Logo} alt="logo imagen" style={{ width: "72px" }} /> */}
       </div>
       {/* Full Menu */}
       <ul className="hidden md:flex text-[#8892b0]">
