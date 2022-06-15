@@ -57,7 +57,7 @@ const NavBar = () => {
           </IconContext.Provider>
         ) : (
           <IconContext.Provider value={{ color: "#a6a6a6", size: "35px" }}>
-          <FaTimes />
+            <FaTimes />
           </IconContext.Provider>
         )}
       </div>

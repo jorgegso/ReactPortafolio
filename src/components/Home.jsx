@@ -7,11 +7,13 @@ const Home = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div name="home" className="w-full h-screen bg-[#01010D] bg-gradient-to-tr from-purple-900 to-teal-900 relative">
+    <div
+      name="home"
+      className="w-full h-screen bg-[#01010D] bg-gradient-to-tr from-purple-900 to-teal-900 relative">
       <img
         src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
         alt=""
-        className="w-full h-full object-cover absolute mix-blend-overlay" 
+        className="w-full h-full object-cover absolute mix-blend-overlay"
       />
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full ">
         <motion.div
@@ -39,9 +41,9 @@ const Home = () => {
             Im a full stack developer
           </h2>
           <p className="text-[#8892b0] py-4 max-w[700px]">
-            I’m a developer specializing in building (and
-            occasionally designing) exceptional digital experiences. Currently,
-            I’m focused on building responsive web applications.
+            I’m a developer specializing in building (and occasionally
+            designing) exceptional digital experiences. Currently, I’m focused
+            on building responsive web applications.
           </p>
         </motion.div>
         <div className="z-40">
