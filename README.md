@@ -4,7 +4,7 @@
 A portfolio is a collection of documents of student work that showcases their effort, progress, accomplishments and this is mine I am improving as time goes by. thanks for watching and you can contact me for anything.
 
 ##How to run the app.
-1. Go to the link [in my web](https://jorgegso.github.io/reactPortafolio/).
+1. Go to the link [in my web]([https://jorgegso.github.io/reactPortafolio/](https://bright-crepe-1d0d38.netlify.app/)).
 2. that's it.
 
 or 
